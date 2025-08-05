@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: auto;
+    box-sizing: border-box;
+}
+
+.caixa {
+    position: relative;
+    width: 800px;
+    height: 700px;
+    color: #060706;
+    background: hsl(0, 0%, 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1px;
+    font:garamond ;
+    text-transform:uppercase;
+
+}
+.caixa::before,
+.caixa::after {
+    content: '';
+    position: absolute;
+    z-index: -4;
+    width: calc(100% + 30px);
+    height: calc(100% + 30px);
+    background: linear-gradient(45deg, #ffff00, #ff00ff, #3498db, #001aff, #a200ff,
+ hsl(22, 100%, 50%), #ff0000, hsl(310, 23%, 57%));
+    background-size: 300%;
+    /*Aqui, vai ser definido a posição das cores quando absolutas(paradas)*/
+    border-radius: 8px; 
+    animation: AnimarBorda 8s linear alternate infinite;
+}
+
+@keyframes AnimarBorda {
+    0% {
+        background-position: 0;
+    }
+
+    100% {
+        background-position: 300%;
+    }
+
+}
+
+.caixa::after {
+    filter: blur(50px);
+}
+
