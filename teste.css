@@ -50,7 +50,7 @@ nav li a:hover {
 
 .banner {
     height: 95vh;
-/*    background: linear-gradient(hsla(103, 29%, 31%, 0.282), hsla(103, 100%, 78%, 0.282)), url('background.jpg');*/
+    /*    background: linear-gradient(hsla(103, 29%, 31%, 0.282), hsla(103, 100%, 78%, 0.282)), url('background.jpg');*/
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -105,7 +105,7 @@ nav li a:hover {
 .texto .botoes button.overlay {
     background: linear-gradient(oklab(72.353% -0.08699 -0.10751 / 0.486), rgba(248, 0, 0, 0.300));
     color: white;
-    animation: vibrar 0.5s ease-in-out infinite both;
+    animation: vibrar 0.6s ease-in-out infinite both;
 }
 
 @keyframes vibrar {
@@ -193,7 +193,7 @@ nav li a:hover {
     /* Altura das imagens */
     overflow: hidden;
     /* Para garantir que as bordas arredondadas sejam visíveis */
-    border-radius: 10px;
+    border-radius: 50px;
     /* Bordas arredondadas */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     /* Sombra para destacar as imagens */
@@ -382,7 +382,8 @@ video#myVideo {
     top: 40px;
     left: 0;
     width: 100%;
-    height: calc(100% - 30px); /* Ajusta a altura para compensar o deslocamento */
+    height: calc(100% - 30px);
+    /* Ajusta a altura para compensar o deslocamento */
     object-fit: cover;
     z-index: -1;
 }
@@ -392,7 +393,8 @@ nav {
     z-index: 2;
 }
 
-.texto, .arrow-container {
+.texto,
+.arrow-container {
     position: relative;
     z-index: 2;
 }
@@ -402,15 +404,16 @@ nav {
     top: calc(10px + [altura da navbar]);
     left: 0;
 }
+
 .arrow-container {
     position: relative;
     width: 50px;
-    height: 100px; 
+    height: 100px;
 }
 
 .arrow {
     position: absolute;
-    bottom: 0; 
+    bottom: 0;
     width: 0;
     height: 0;
     border-left: 25px solid transparent;
@@ -425,23 +428,26 @@ nav {
     position: absolute;
     bottom: 0;
     left: 50%;
-    width: 10px; 
-    height: 100px; 
-    background-color: #3498db; 
-    transform: translateX(-50%); 
+    width: 10px;
+    height: 100px;
+    background-color: #3498db;
+    transform: translateX(-50%);
 }
 
 @keyframes bounce {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateY(0) rotate(45deg);
     }
+
     50% {
         transform: translateY(-20px) rotate(45deg);
     }
 }
 
 #myVideo {
-    position:relative;
+    position: relative;
     top: 0px;
     left: 0;
     width: 100%;
@@ -449,7 +455,33 @@ nav {
     object-fit: cover;
 }
 
-body.parceiros{
+body.parceiros {
     background-image: url(img/fundoin.jpg);
     height: 180vh;
+}
+
+.image-juc {
+    width: 300px;
+    /* Largura das imagens */
+    height: 280px;
+    /* Altura das imagens */
+    overflow: hidden;
+    /* Para garantir que as bordas arredondadas sejam visíveis */
+    border-radius: 100px;
+    /* Bordas arredondadas */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    /* Sombra para destacar as imagens */
+    transform: translateZ(0);
+    /* Ativa a renderização 3D */
+    transition: transform 0.3s ease-out;
+    /* Transição suave ao passar o mouse */
+
+}
+
+.imgmanuel {
+    margin-left: 5vh;
+    animation: vibrar 0.6s ease-in-out infinite both;
+}
+.pdf{
+    
 }

@@ -6,7 +6,7 @@
 
 .caixa {
     position: relative;
-    width: 800px;
+    width: 700px;
     height: 700px;
     color: #060706;
     background: hsl(0, 0%, 100%);
@@ -18,6 +18,7 @@
     text-transform:uppercase;
 
 }
+
 .caixa::before,
 .caixa::after {
     content: '';
@@ -25,8 +26,8 @@
     z-index: -4;
     width: calc(100% + 30px);
     height: calc(100% + 30px);
-    background: linear-gradient(45deg, #ffff00, #ff00ff, #3498db, #001aff, #a200ff,
- hsl(22, 100%, 50%), #ff0000, hsl(310, 23%, 57%));
+    background: linear-gradient(45deg, /*#ffff00, hsl(175, 69%, 76%), #3498db, #9dff00, #a200ff,
+ hsl(22, 100%, 50%),*/    #979191, hsl(310, 23%, 57%));
     background-size: 300%;
     /*Aqui, vai ser definido a posição das cores quando absolutas(paradas)*/
     border-radius: 8px; 
@@ -48,3 +49,6 @@
     filter: blur(50px);
 }
 
+.alinhar{
+  align-self:normal;
+}
