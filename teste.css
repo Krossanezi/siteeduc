@@ -418,7 +418,7 @@ nav {
     height: 0;
     border-left: 25px solid transparent;
     border-right: 25px solid transparent;
-    border-bottom: 50px solid #3498db;
+    border-bottom: 50px solid #084e7c;
     animation: bounce 1s infinite;
     transform: rotate(45deg);
     transform-origin: bottom;

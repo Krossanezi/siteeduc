@@ -27,7 +27,7 @@ body {
 }
 
 .btn-white {
-    background-color: oklab(74.226% -0.03381 -0.05338);
+    background-color: oklab(72.776% -0.04462 -0.07155);
     color: #f3eaff;
 }
 
@@ -45,7 +45,7 @@ body {
 }
 
 .btn-white::after {
-    background-color: hwb(216 62% 20%);
+    background-color: lab(82.99% 3.44 45.19);
 }
 
 .btn:hover::after {
